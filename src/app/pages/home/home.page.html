@@ -1,0 +1,41 @@
+<ion-header collapse="condense">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title size="medium">Welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list color="warning">
+    <ion-item color="warning">
+      <ion-avatar slot="strart"> </ion-avatar>
+      <ion-label>
+        <h1>
+          <ion-icon name="person" size="full"></ion-icon>
+          {{email}}
+        </h1>
+        <p><span class="text">Student</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> Last Class </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="nones">
+        <ion-icon
+          name="hourglass-outline"
+          slot="start"
+          color="primary"
+        ></ion-icon>
+        <ion-label
+          >Programacion Movil
+          <p>09/08/2023 10:40:00 am</p>
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

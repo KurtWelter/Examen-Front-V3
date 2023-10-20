@@ -1,0 +1,78 @@
+<ion-header collapse="condense">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+    </ion-buttons>
+    <ion-title size="medium">Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Are you a Teacher or Student?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Teacher</ion-label>
+          <ion-radio value="teacher"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Student</ion-label>
+          <ion-radio value="student"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Personal Data</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input
+          label="Name"
+          type="text"
+          labelPlacement="floating"
+          placeholder="Enter Name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Last Name"
+          type="text"
+          labelPlacement="floating"
+          placeholder="Enter Last Name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Email"
+          type="email"
+          labelPlacement="floating"
+          placeholder="Enter Email"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Password"
+          type="password"
+          labelPlacement="floating"
+          placeholder="Enter Password"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Confirm Password"
+          type="password"
+          labelPlacement="floating"
+          placeholder="Enter Confirm Password"
+        ></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="dark" (click)="register()"
+    >Register</ion-button
+  >
+</ion-content>
